@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Game</title>
+    <link rel="stylesheet" href="./game.css">
+</head>
+<body>
+
+<div class="di" id="startScreen">
+    <div>
+        <h2>GAME</h2>
+        <p>Press S or Click Start</p>
+        <button id="startBtn">▶ Start</button>
+    </div>
+</div>
+
+<div class="game" id="game" style="display:none;">
+
+    <div id="score">SCORE : 0</div>
+
+    <div id="player" class="player">
+        <img src="./OIP.jpe" alt="Player">
+    </div>
+
+    <div class="enemyArrow" id="arrow1">⬅️</div>
+    <div class="enemyArrow" id="arrow2">⬅️</div>
+    <div class="enemyArrow" id="arrow3">⬅️</div>
+
+</div>
+
+<!-- Move it here -->
+<div class="di" id="gameOverScreen" style="display:none;">
+    <div>
+        <h2>YOU LOST!</h2>
+        <h3 id="finalScore">Final Score : 0</h3>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
